@@ -4,11 +4,11 @@ CONFIG_FILE := kurtosis.config
 
 .PHONY: run
 run:
-	kurtosis run $(ETHEREUM_PACKAGE) --enclave $(ENCLAVE_NAME) --args-file ./$(CONFIG_FILE).local.yaml --image-download always
+	kurtosis run $(ETHEREUM_PACKAGE) --enclave $(ENCLAVE_NAME) --args-file ./$(CONFIG_FILE).local.yaml --image-download missing
 
 .PHONY: run-registry
 run-registry:
-	kurtosis run $(ETHEREUM_PACKAGE) --enclave $(ENCLAVE_NAME) --args-file ./$(CONFIG_FILE).registry.yaml --image-download always
+	kurtosis run $(ETHEREUM_PACKAGE) --enclave $(ENCLAVE_NAME) --args-file ./$(CONFIG_FILE).registry.yaml --image-download missing
 
 .PHONY: stop
 stop:

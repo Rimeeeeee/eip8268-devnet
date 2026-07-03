@@ -17,7 +17,7 @@ network_params:
   num_validator_keys_per_node: 32
 snooper_enabled: true
 dora_params:
-  image: updated8268:dora
+  image: eip8268-dora:improved
 additional_services:
   - dora
   - tx_fuzz
