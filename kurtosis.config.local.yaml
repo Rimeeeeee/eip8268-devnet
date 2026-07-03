@@ -1,0 +1,36 @@
+participants:
+  - el_type: geth
+    el_image: geth-eip8268:latest
+    cl_type: lodestar
+    cl_image: lodestar-eip8268:latest
+    supernode: true
+  - el_type: reth
+    el_image: reth-eip8268:latest
+    cl_type: lodestar
+    cl_image: lodestar-eip8268:latest
+network_params:
+  genesis_delay: 90
+  fulu_fork_epoch: 0
+  gloas_fork_epoch: 1
+  heze_fork_epoch: 2
+  seconds_per_slot: 12
+  num_validator_keys_per_node: 32
+snooper_enabled: true
+dora_params:
+  image: updated8268:dora
+additional_services:
+  - dora
+  - tx_fuzz
+  - spamoor
+port_publisher:
+  additional_services:
+    enabled: true
+    public_port_start: 65500
+spamoor_params:
+  spammers:
+    - scenario: eoatx
+      config:
+        throughput: 20
+    - scenario: uniswap-swaps
+      config:
+        throughput: 20
