@@ -1,13 +1,13 @@
 participants:
   - el_type: geth
-    el_image: updated8268:geth
+    el_image: rimeeeeee/geth-eip8268:latest
     cl_type: lodestar
-    cl_image: lodestar-eip8268:latest
+    cl_image: rimeeeeee/lodestar-eip8268:latest
     supernode: true
   - el_type: reth
-    el_image: reth-eip8268:latest
+    el_image: rimeeeeee/reth-eip8268:latest
     cl_type: lodestar
-    cl_image: lodestar-eip8268:latest
+    cl_image: rimeeeeee/lodestar-eip8268:latest
 network_params:
   genesis_delay: 90
   fulu_fork_epoch: 0
@@ -17,7 +17,7 @@ network_params:
   num_validator_keys_per_node: 32
 snooper_enabled: true
 dora_params:
-  image: eip8268-dora:improved
+  image: rimeeeeee/eip8268-dora:revised
 additional_services:
   - dora
   - tx_fuzz
