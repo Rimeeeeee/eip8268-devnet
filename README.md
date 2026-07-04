@@ -9,6 +9,14 @@ Kurtosis devnet configuration for testing EIP-8268 block access list behavior ac
 - Additional services: Dora, tx-fuzz, Spamoor
 - Snooper: enabled for engine/RPC traffic inspection
 
+## Implementation Branches
+
+- Dora: [Rimeeeeee/dora `eip7928-plus-eip8268`](https://github.com/Rimeeeeee/dora/tree/eip7928-plus-eip8268)
+- go-eth2-client: [Rimeeeeee/go-eth2-client `heze-block-version-support`](https://github.com/Rimeeeeee/go-eth2-client/tree/heze-block-version-support)
+- Geth: [Rimeeeeee/go-ethereum `eip-8268`](https://github.com/Rimeeeeee/go-ethereum/tree/eip-8268)
+- Lodestar: [Rimeeeeee/lodestar `eip-8268`](https://github.com/Rimeeeeee/lodestar/tree/eip-8268)
+- Reth: [paradigmxyz/reth-oss `eip8268-devnet`](https://github.com/paradigmxyz/reth-oss/tree/eip8268-devnet)
+
 ## Fork Schedule
 
 The included configs use a fast local schedule:
